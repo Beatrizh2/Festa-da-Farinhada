@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação - Inscrição realizada</title>
+    
+
+    <style>
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+            background: #fbf9f6;
+            color: #1f2a20;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid rgba(0,0,0,0.06);
+            border-radius: 12px;
+            padding: 28px;
+            max-width: 560px;
+            width: 100%;
+            box-shadow: 0 2px 8px rgba(15,15,15,0.04);
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0 0 8px 0;
+            font-size: 20px;
+        }
+
+        p {
+            color: #3b4a3b;
+            margin: 8px 0 18px 0;
+            font-size: 15px;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 10px 16px;
+            background: #2f6b2f;
+            color: #fff;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a.button:hover { background: #3f7f3f }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <!-- Logomarca 2 no topo da página de confirmação -->
+        <div style="text-align:center;margin-bottom:12px;">
+            <img src="./Corrida/2.png" alt="Logomarca 2" style="width:96px;height:auto;">
+        </div>
+
+        <h1>Inscrição realizada com sucesso!</h1>
+        <p>Obrigado por se inscrever na Corrida Cultural — nos vemos no evento!</p>
+        <a href="index.html" class="button">Voltar à inscrição</a>
+
+        <!-- rodapé com Logomarca 1 -->
+        <div style="margin-top:18px;text-align:center;border-top:1px solid rgba(0,0,0,0.04);padding-top:8px;">
+            <img src="./Corrida/1.png" alt="Logomarca 1" style="width:84px;height:auto;">
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Formulário de Inscrição - Corrida Cultural</title>
+  <style>
+    :root {
+      --card-radius: 22px;
+      --input-radius: 10px;
+      --input-bg: rgba(255, 255, 255, 0.95);
+      --accent: #9b4844;
+      --accent-dark: #7a2f2d;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      font-family: "Inter", system-ui, Arial;
+      background: url("https://i.postimg.cc/BZkzsspx/6.png") center/cover fixed no-repeat;
+      color: #1b1b1b;
+      overflow: hidden;
+    }
+
+    .wrap {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 370px;
+      height: 95vh;
+      background: url("https://i.postimg.cc/G90rJGTG/11.png") center/cover no-repeat;
+      border-radius: var(--card-radius);
+      padding: 16px 18px;
+      box-sizing: border-box;
+      box-shadow: 0 30px 30px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .brand {
+      display: flex;
+      justify-content: center;
+      margin-top: 4px;
+    }
+
+    .brand img {
+      width: 42%;
+      max-width: 120px;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 18px;
+      text-align: center;
+      color: #4f3232;
+      margin: 4px 0 8px;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+    }
+
+    form {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .field {
+      margin-bottom: 6px;
+    }
+
+    label.field-label {
+      display: block;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: #4f3232;
+      margin-bottom: 3px;
+      text-shadow: 0 1px 3px rgba(161, 151, 151, 0.4);
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 8px 10px;
+      border-radius: var(--input-radius);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      background: var(--input-bg);
+      font-size: 13.5px;
+      color: #2b2b2b;
+      box-sizing: border-box;
+    }
+
+    .terms-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      margin: 6px 0 4px;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .terms-box {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 8px;
+      font-size: 12px;
+      color: #333;
+      line-height: 1.35;
+      max-height: 80px;
+      overflow-y: auto;
+    }
+
+    .terms-action {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 6px;
+      color: #4f3232;
+      font-size: 15.5px;
+      font-weight: 600;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    }
+
+    .terms-action input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      accent-color: var(--accent);
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 20px;
+      background: linear-gradient(180deg, var(--accent), var(--accent-dark));
+      color: #fff;
+      border: none;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
+      transition: transform 0.15s ease;
+      margin-top: 8px;
+    }
+
+    button[type="submit"]:active {
+      transform: translateY(2px);
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 4px;
+    }
+
+    .card-footer img {
+      width: 80px;
+      opacity: 0.9;
+    }
+
+    input:focus,
+    select:focus,
+    button:focus {
+      outline: 2px solid rgba(255, 255, 255, 0.15);
+      outline-offset: 2px;
+    }
+
+    @media (min-height: 700px) {
+      .card {
+        max-height: 92vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div>
+        <div class="brand">
+          <img src="https://i.postimg.cc/gJxhXHHs/002.png" alt="Corrida Cultural">
+        </div>
+
+        <h1>Formulário de Inscrição</h1>
+
+        <form id="inscricaoForm" novalidate>
+          <div class="field">
+            <label class="field-label" for="nome">Nome Completo:</label>
+            <input id="nome" name="nome" type="text" required>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="cpf">CPF:</label>
+            <input id="cpf" name="cpf" type="text" required>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="whatsapp">WhatsApp:</label>
+            <input id="whatsapp" name="whatsapp" type="text" required>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="modalidade">Opção:</label>
+            <select id="modalidade" name="modalidade" required>
+              <option value="">Selecione</option>
+              <option value="Corrida 9km">Corrida - 8 km</option>
+              <option value="Caminhada 6km">Caminhada - 6 km</option>
+            </select>
+          </div>
+
+          <div class="terms-title">Termos e Condições</div>
+          <div class="terms-box">
+            <strong>Declaro que estou ciente e de acordo:</strong><br><br>
+            • Participo voluntariamente e sou responsável pela minha saúde.<br><br>
+            • Autorizo uso da imagem para divulgação do evento.<br><br>
+            • Organização não se responsabiliza por danos ou perdas.<br><br>
+            • Comprometo-me a seguir regras de segurança e convivência.
+          </div>
+
+          <div class="terms-action">
+            <input id="aceito" name="aceito" type="checkbox" required>
+            <label for="aceito">Li e aceito os termos</label>
+          </div>
+
+          <button type="submit">Enviar Inscrição</button>
+        </form>
+      </div>
+
+      <div class="card-footer">
+        <img src="https://i.postimg.cc/q78XBLQt/003.png" alt="Corrida Cultural">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('inscricaoForm');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const data = new FormData(form);
+      fetch('https://script.google.com/macros/s/AKfycbwfgEXTVnW1atJmf9PFXLZ2JEZCxpoNYaO0A_chSNiFtarysT9o2DWYxGqcVs7bfqSrpA/exec', { method: 'POST', body: data })
+        .then(res => {
+          if (res.ok) {
+            window.location.href = './confirmacao.html';
+          } else {
+            alert('Erro ao enviar. Tente novamente.');
+          }
+        })
+        .catch(err => alert('Erro: ' + err.message));
+    });
+  </script>
+</body>
+
+</html>
